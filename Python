@@ -9,4 +9,3 @@ while n != 1:
       n = 3 * n + 1  
     #listagem dos números no loop
     print(round(n,3))
- 
