@@ -1,4 +1,4 @@
-# código para listar a conjectura de collatz, mas em python
+# código para listar a conjectura de collatz, mas em python. Entrada do user
 n = int(input("Digite um número para a Conjectura de Collatz: "))
 # loop
 while n != 1:
