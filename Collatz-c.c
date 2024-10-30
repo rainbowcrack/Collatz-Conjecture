@@ -1,24 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 500
-// código para listar a conjectura de collatz
-// utilizando o mesmo código do even or odd
+// codigo para listar a conjectura de collatz
+// utilizando o mesmo codigo do even or odd
 
 void collatz(int num1, int vetor[], int *tamanho){
 
   while (num1 != 1) {
       
-    vetor[*tamanho] = num1; // Armazena o número atual no vetor
+    vetor[*tamanho] = num1; // Armazena o numero atual no vetor
     (*tamanho)++;
     
-    // condição par do even or odd
+    // condicao par do even or odd
     if (num1 % 2 == 0) {
       
       // premissa do Collatz par
       num1 = num1 / 2;
     }
       
-      // else não precisa declarar ímpar
+      // else nao precisa declarar impar
       // premissa do Collatz ímpar (3n+1)
     else {
       num1 = (3 * num1) + 1;
