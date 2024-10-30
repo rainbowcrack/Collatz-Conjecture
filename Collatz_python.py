@@ -14,8 +14,8 @@ def main():
     
     def input_numero():
         num = int(input("Digite um número para a Conjectura de Collatz: "))
-        return num
-    
+        
+        return num    
     
     num1 = input_numero()
     vetor = collatz(num1)
@@ -23,6 +23,5 @@ def main():
     # Exibe os resultados
     print("Sequência da Conjectura de Collatz:", ", ".join(map(str, vetor)))
     print("Quantidade de Operações:", len(vetor) - 1)
-
 
 main()
