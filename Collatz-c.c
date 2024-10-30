@@ -8,7 +8,7 @@ void collatz(int num1, int vetor[], int *tamanho){
 
   while (num1 != 1) {
       
-    vetor[*tamanho] = num1; // Armazena o numero atual no vetor
+    vetor[*tamanho] = num1; // armazena o numero atual no vetor
     (*tamanho)++;
     
     // condicao par do even or odd
@@ -19,14 +19,13 @@ void collatz(int num1, int vetor[], int *tamanho){
     }
       
       // else nao precisa declarar impar
-      // premissa do Collatz ímpar (3n+1)
+      // premissa do Collatz impar (3n+1)
     else {
       num1 = (3 * num1) + 1;
     }
   }
   vetor[*tamanho] = 1; // Adiciona o 1 ao vetor
-  (*tamanho)++;
-  
+  (*tamanho)++;  
 }
 
 // funcao para entrada
@@ -50,7 +49,7 @@ int main(void) {
     collatz(num1, vetor, &tamanho);
     
      // Exibe os resultados
-    printf("Sequência da Conjectura de Collatz: ");
+    printf("Sequencia da Conjectura de Collatz: ");
     for (int i = 0; i < tamanho; i++) {
         printf("%d, ", vetor[i]);
     }
