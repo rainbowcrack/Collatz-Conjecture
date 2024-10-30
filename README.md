@@ -13,3 +13,7 @@ The Collatz Conjecture may seem simple, but it has several applications in mathe
 - Number Theory
 - Ergodic Theory
 - Fractals
+
+  ### Author
+  [Izabel Chaves](https://github.com/rainbowcrack/)
+  PUC MINAS "Introdução à Computação", 1º período - 2024.2
